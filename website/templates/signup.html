@@ -1,0 +1,29 @@
+{% extends "blank_navigation.html" %} {% block title %}sign up{% endblock %}
+
+{% block content %}
+<center>
+    <h1>create a fan account</h1>
+    <form action="/dashboard" method="POST">
+        <label for="name">your name</label>
+        <input type="text" name="name" placeholder="enter your stellar name" class="form-control" required>
+        <br>
+        <label for="username">username</label>
+        <input type="text" name="username" class="form-control" required>
+        <br>
+        <label for="password1">password</label>
+        <input type="password" name="password1" id="password1" class="form-control" required>
+        <br>
+        <label for="password2">confirm password</label>
+        <input type="password" name="password2" class="form-control" required oninput="check_password(this)">
+        <br>
+        <label for="email1">email</label>
+        <input type="email" name="email1" id="email1" class="form-control" required>
+        <br>
+        <label for="email2">confirm email</label>
+        <input type="email" name="email2" class="form-control" required oninput="check_email(this)">
+        <br>
+        <button type="submit" class="btn btn-light">sign up</button>
+    </form>
+</center>
+
+{% endblock %}

@@ -53,6 +53,11 @@ hr {
     background-color: #9776dc;
 }
 
+nav img {
+    width: 3em;
+    height: auto;
+}
+
 
 /* || Sitewide - modal */
 .modal-body, .modal-header, .modal-footer {

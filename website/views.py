@@ -21,6 +21,10 @@ def home():
     db_shows = dbq.get_ten_shows()
     return render_template("index.html", artists = db_artists, tracks=db_tracks, shows=db_shows)
 
+@views.route('/fans-signup')
+def fan_signup():
+    return render_template('signup.html')
+
 @views.route('/fans-home')
 def fan_home():
     # load ten artists, ten tracks, and ten shows from the database
